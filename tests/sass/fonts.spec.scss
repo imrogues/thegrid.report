@@ -53,4 +53,57 @@
       }
     }
   }
+
+  @include test-module('ET Book font') {
+    @include test('Should output the appropriate font size giving params') {
+      @include assert('@mixin font()') {
+        @include output {
+          @include font('et-book');
+        }
+
+        @include expect {
+          font-family: "et-book"; // sass-lint:disable-line quotes
+          font-style: normal;
+          font-weight: 400;
+          // sass-lint:disable no-url-domains, no-url-protocols
+          src: url('http://posters.wtf/fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff');
+          // sass-lint:enable no-url-domains, no-url-protocols
+        }
+      }
+    }
+  }
+
+  @include test('Should output the appropriate font size giving params') {
+    @include assert('@mixin font()') {
+      @include output {
+        @include font('et-book', normal, 400);
+      }
+
+      @include expect {
+        font-family: "et-book"; // sass-lint:disable-line quotes
+        font-style: normal;
+        font-weight: 400;
+        // sass-lint:disable no-url-domains, no-url-protocols
+        src: url('http://posters.wtf/fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff');
+        // sass-lint:enable no-url-domains, no-url-protocols
+      }
+    }
+  }
+
+  @include test('Should output the appropriate font weight giving params') {
+    @include assert('@mixin font()') {
+      @include output {
+        @include font('et-book', normal, 600);
+      }
+
+      @include expect {
+        font-family: "et-book"; // sass-lint:disable-line quotes
+        font-style: normal;
+        font-weight: 600;
+        // sass-lint:disable no-url-domains, no-url-protocols
+        src: url('http://posters.wtf/fonts/et-book/et-book-semi-bold-old-style-figures/et-book-semi-bold-old-style-figures.woff');
+        // sass-lint:enable no-url-domains, no-url-protocols
+      }
+    }
+  }
 }

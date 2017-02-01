@@ -13,5 +13,13 @@
       src: url('http://posters.wtf/fonts/myriad-set-pro/myriad-set-pro_text.ttf');
     }
   }
+
+  @if $family == 'et-book' {
+    @if $weight == 600 {
+      src: url('http://posters.wtf/fonts/et-book/et-book-semi-bold-old-style-figures/et-book-semi-bold-old-style-figures.woff');
+    } @else {
+      src: url('http://posters.wtf/fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff');
+    }
+  }
   // sass-lint:enable no-url-domains, no-url-protocols
 }
