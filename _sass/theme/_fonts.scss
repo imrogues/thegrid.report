@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'myriad-set-pro';
+  font-style: normal;
+  font-weight: 400;
+  // sass-lint:disable no-url-domains, no-url-protocols
+  src: url('http://posters.wtf/fonts/myriad-set-pro/myriad-set-pro_text.ttf');
+  // sass-lint:enable no-url-domains, no-url-protocols
+}
+
+@font-face {
+  font-family: 'myriad-set-pro';
+  font-style: normal;
+  font-weight: 600;
+  // sass-lint:disable no-url-domains, no-url-protocols
+  src: url('http://posters.wtf/fonts/myriad-set-pro/myriad-set-pro_bold.ttf');
+  // sass-lint:enable no-url-domains, no-url-protocols
+}

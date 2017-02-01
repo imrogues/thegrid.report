@@ -1,0 +1,56 @@
+@charset 'utf-8';
+
+@include test-module('The Grid Report :: mixins') {
+  @include test-module('Myriad Set Pro font') {
+    @include test('Should output the appropriate font size giving params') {
+      @include assert('@mixin font()') {
+        @include output {
+          @include font('myriad-set-pro', normal, 400);
+        }
+
+        @include expect {
+          font-family: "myriad-set-pro"; // sass-lint:disable-line quotes
+          font-style: normal;
+          font-weight: 400;
+          // sass-lint:disable no-url-domains, no-url-protocols
+          src: url('http://posters.wtf/fonts/myriad-set-pro/myriad-set-pro_text.ttf');
+          // sass-lint:enable no-url-domains, no-url-protocols
+        }
+      }
+    }
+
+    @include test('Should output the appropriate font size with no params') {
+      @include assert('@mixin font()') {
+        @include output {
+          @include font('myriad-set-pro');
+        }
+
+        @include expect {
+          font-family: "myriad-set-pro"; // sass-lint:disable-line quotes
+          font-style: normal;
+          font-weight: 400;
+          // sass-lint:disable no-url-domains, no-url-protocols
+          src: url('http://posters.wtf/fonts/myriad-set-pro/myriad-set-pro_text.ttf');
+          // sass-lint:enable no-url-domains, no-url-protocols
+        }
+      }
+    }
+
+    @include test('Should output the appropriate font weight giving params') {
+      @include assert('@mixin font()') {
+        @include output {
+          @include font('myriad-set-pro', normal, 600);
+        }
+
+        @include expect {
+          font-family: "myriad-set-pro"; // sass-lint:disable-line quotes
+          font-style: normal;
+          font-weight: 600;
+          // sass-lint:disable no-url-domains, no-url-protocols
+          src: url('http://posters.wtf/fonts/myriad-set-pro/myriad-set-pro_bold.ttf');
+          // sass-lint:enable no-url-domains, no-url-protocols
+        }
+      }
+    }
+  }
+}

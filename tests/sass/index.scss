@@ -4,10 +4,13 @@
 
 @import '../../_sass/theme/palette';
 
+@import '../../_sass/mixins/font';
+
 @import '../../_sass/functions/color.white';
 @import '../../_sass/functions/palette';
 
 @import './white.spec';
 @import './palette.spec';
+@import './fonts.spec';
 
 @include report;
