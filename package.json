@@ -4,6 +4,7 @@
   "description": "A publication to know how to ask questions.",
   "main": "index.js",
   "scripts": {
+    "precommit": "npm t",
     "test": "sass-lint --config .scss-lint.yml --verbose --no-exit"
   },
   "repository": {
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/imrogues/thegrid.report#readme",
   "devDependencies": {
+    "husky": "^0.13.1",
     "node-sass": "^4.5.0",
     "sass-lint": "^1.10.2"
   }
