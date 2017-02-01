@@ -1,0 +1,11 @@
+title:        "The Grid Report"
+description:  "A publication to know how to ask questions."
+baseurl:      "/"
+url:          "http://thegrid.report"
+author:
+  name: "Rogues"
+  twitter: "imrogues"
+
+# Build settings
+markdown: kramdown
+theme: minima
