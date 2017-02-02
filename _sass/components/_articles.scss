@@ -1,0 +1,31 @@
+.articles {
+  margin-top: 120px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 150px;
+    text-align: left;
+  }
+
+  article {
+    margin-bottom: 25px;
+  }
+
+  &__date {
+    color: palette(boulder);
+    font-family: 'myriad-set-pro';
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    color: palette(tacao);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+  }
+}

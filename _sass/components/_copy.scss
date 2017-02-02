@@ -1,0 +1,23 @@
+.copy {
+  font-size: 46px;
+  font-weight: 400;
+  letter-spacing: -0.030em;
+  line-height: 50px;
+  max-width: 625px;
+  text-align: center;
+
+  &__name {
+    color: palette(boulder);
+  }
+
+  @media screen and (min-width: 414px) {
+    padding: 0 35px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 66px;
+    line-height: 79px;
+    margin-left: 62.5px;
+    text-align: left;
+  }
+}
