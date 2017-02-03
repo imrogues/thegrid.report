@@ -1,7 +1,9 @@
 title:        "The Grid Report"
 description:  "A publication to know how to ask questions."
 baseurl:      ""
-url:          "https://imrogues.github.io/thegrid.report/"
+keywords:     "Design, Frontend, UX, Art-Directed, Essays"
+# url:          "https://thegrid.report"
+url:          "http://127.0.0.1:4000"
 author:
   name: "Rogues"
   twitter: "imrogues"
