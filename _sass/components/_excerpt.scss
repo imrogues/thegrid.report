@@ -1,9 +1,10 @@
 .excerpt {
   -webkit-hyphens: auto; // sass-lint:disable-line no-vendor-prefixes
   color: palette(boulder);
-  font-size: 18px;
+  font-family: 'Karla';
+  font-size: 14px;
   hyphens: auto;
-  letter-spacing: -0.030em;
+  line-height: 24px;
   margin: 0 auto;
   margin-top: 120px;
   max-width: 310px;
