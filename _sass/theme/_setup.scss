@@ -1,9 +1,5 @@
 @charset 'utf-8';
 
-// sass-lint:disable no-url-domains, no-url-protocols
-@import url('https://fonts.googleapis.com/css?family=Karla');
-// sass-lint:enable no-url-domains, no-url-protocols
-
 * {
   &,
   &::before,
@@ -15,7 +11,7 @@
 body {
   background-color: palette(mine-shaft);
   color: white(1);
-  font-family: 'et-book';
+  font-family: 'px-grotesk';
   font-size: 100%;
   font-weight: 400;
   line-height: 1.5;

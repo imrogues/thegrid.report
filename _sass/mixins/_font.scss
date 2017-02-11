@@ -6,20 +6,10 @@
   font-weight: $weight;
 
   // sass-lint:disable no-url-domains, no-url-protocols
-  @if $family == 'myriad-set-pro' {
-    @if $weight == 600 {
-      src: url('http://posters.wtf/fonts/myriad-set-pro/myriad-set-pro_bold.ttf');
-    } @else {
-      src: url('http://posters.wtf/fonts/myriad-set-pro/myriad-set-pro_text.ttf');
-    }
-  }
-
-  @if $family == 'et-book' {
-    @if $weight == 600 {
-      src: url('http://posters.wtf/fonts/et-book/et-book-semi-bold-old-style-figures/et-book-semi-bold-old-style-figures.woff');
-    } @else {
-      src: url('http://posters.wtf/fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff');
-    }
+  @if $family == 'basil-lite' {
+    src: url('http://posters.wtf/fonts/King-Basil-Lite.otf');
+  } @else {
+    src: url('http://posters.wtf/fonts/Px-Grotesk-Regular.ttf');
   }
   // sass-lint:enable no-url-domains, no-url-protocols
 }

@@ -1,8 +1,10 @@
 <div class='articles'>
-  {% for post in site.posts %}
-    <article>
-      <time class='articles__date'>{{ post.date | date: "%b %-d, %Y" }}</time>
-      <h3 class='articles__title'>{{ post.title | escape }}</h3>
-    </article>
-  {% endfor %}
+  <article>
+    {% for post in site.posts %}
+      <a href='#'>
+        <time class='articles__date'>{{ post.date | date: "%b" }}</time>
+        <h3 class='articles__title'>{{ post.title | escape }}</h3>
+      </a>
+    {% endfor %}
+  </article>
 </div>

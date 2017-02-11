@@ -1,10 +1,18 @@
 .articles {
-  margin-top: 120px;
+  // font-family: 'px-grotesk';
+  list-style-type: none;
+  margin: 200px auto 0;
+  padding-left: 0;
   text-align: center;
 
-  @media screen and (min-width: 768px) {
-    margin-left: 150px;
-    text-align: left;
+  a {
+    color: palette(tacao);
+    display: inline-block;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: white(1);
+    }
   }
 
   article {
@@ -12,20 +20,30 @@
   }
 
   &__date {
-    color: palette(boulder);
-    font-family: 'Karla';
+    color: white(0.8);
+    font-family: sans-serif;
     font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 28px;
-    text-transform: uppercase;
   }
 
   &__title {
-    color: palette(tacao);
-    font-size: 22px;
+    // sass-lint:disable no-vendor-prefixes
+    -webkit-transition: color 0.3s ease-in-out;
+    // sass-lint:enable no-vendor-prefixes
+    color: currentColor;
+    display: inline-block;
+    font-family: 'px-grotesk';
+    font-size: 60px;
     font-weight: 400;
-    line-height: 28px;
+    letter-spacing: -0.011em;
+    line-height: 1;
     margin: 0;
+    transition: color 0.3s ease-in-out;
   }
+}
+
+.day {
+  background-color: white(0.2);
+  height: 25px;
+  margin: 1px;
+  width: 25px;
 }
