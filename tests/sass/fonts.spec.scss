@@ -12,9 +12,13 @@
           font-family: "px-grotesk"; // sass-lint:disable-line quotes
           font-style: normal;
           font-weight: 400;
-          // sass-lint:disable no-url-domains, no-url-protocols
-          src: url('http://posters.wtf/fonts/Px-Grotesk-Regular.ttf');
-          // sass-lint:enable no-url-domains, no-url-protocols
+          // sass-lint:disable no-url-domains, no-url-protocols, no-duplicate-properties, indentation
+          src: url('https://storage.googleapis.com/ro9ues/fonts/px-grotesk-regular.eot');
+          src: url('https://storage.googleapis.com/ro9ues/fonts/px-grotesk-regular.eot?#iefix') format('embedded-opentype'),
+               url('https://storage.googleapis.com/ro9ues/fonts/px-grotesk-regular.woff') format('woff'),
+               url('https://storage.googleapis.com/ro9ues/fonts/px-grotesk-regular.ttf'),
+               url('https://storage.googleapis.com/ro9ues/fonts/px-grotesk-regular.svg') format('svg');
+          // sass-lint:enable no-url-domains, no-url-protocols, no-duplicate-properties, indentation
         }
       }
     }
@@ -29,9 +33,13 @@
           font-family: "px-grotesk"; // sass-lint:disable-line quotes
           font-style: normal;
           font-weight: 400;
-          // sass-lint:disable no-url-domains, no-url-protocols
-          src: url('http://posters.wtf/fonts/Px-Grotesk-Regular.ttf');
-          // sass-lint:enable no-url-domains, no-url-protocols
+          // sass-lint:disable no-url-domains, no-url-protocols, no-duplicate-properties, indentation
+          src: url('https://storage.googleapis.com/ro9ues/fonts/px-grotesk-regular.eot');
+          src: url('https://storage.googleapis.com/ro9ues/fonts/px-grotesk-regular.eot?#iefix') format('embedded-opentype'),
+               url('https://storage.googleapis.com/ro9ues/fonts/px-grotesk-regular.woff') format('woff'),
+               url('https://storage.googleapis.com/ro9ues/fonts/px-grotesk-regular.ttf'),
+               url('https://storage.googleapis.com/ro9ues/fonts/px-grotesk-regular.svg') format('svg');
+          // sass-lint:enable no-url-domains, no-url-protocols, no-duplicate-properties, indentation
         }
       }
     }
@@ -49,7 +57,7 @@
           font-style: normal;
           font-weight: 400;
           // sass-lint:disable no-url-domains, no-url-protocols
-          src: url('http://posters.wtf/fonts/King-Basil-Lite.otf');
+          src: url('https://storage.googleapis.com/ro9ues/fonts/king-basil-lite.otf');
           // sass-lint:enable no-url-domains, no-url-protocols
         }
       }
@@ -67,7 +75,7 @@
         font-style: normal;
         font-weight: 400;
         // sass-lint:disable no-url-domains, no-url-protocols
-        src: url('http://posters.wtf/fonts/King-Basil-Lite.otf');
+        src: url('https://storage.googleapis.com/ro9ues/fonts/king-basil-lite.otf');
         // sass-lint:enable no-url-domains, no-url-protocols
       }
     }
