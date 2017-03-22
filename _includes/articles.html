@@ -1,7 +1,7 @@
 <div class='articles'>
   <article>
     {% for post in site.posts %}
-      <a href='#'>
+      <a href='{{ site.url | append: post.url }}'>
         <time class='articles__date'>{{ post.date | date: "%b" }}</time>
         <h3 class='articles__title'>{{ post.title | escape }}</h3>
       </a>
