@@ -1,5 +1,5 @@
-<meta name='hdl' content='{{ site.title }}' />
-<meta name='alternativeHeadline' content='{{ site.title }}. {{ site.description }}' />
+<meta name='hdl' content='{% if page.title %}{{ page.title }}{% else %}{{ site.title }} | An Art–Directed Publication{% endif %}' />
+<meta name='alternativeHeadline' content='{% if page.title %}{{ page.title }}. {{ page.description }}{% else %}{{ site.title }} | An Art–Directed Publication{% endif %}' />
 <meta name='genre' content='Website' />
 <meta name='author' content='{{ site.author.name }}' />
 <meta name='pdate' content="{{ page.date | date: '%Y-%m-%d' }}" />
@@ -18,9 +18,9 @@
 <meta name='DisplayDate' content="{{ page.date | date: '%Y-%m-%d' }}" />
 <meta name='Author' content='{{ site.author.name }}' />
 
-<meta itemprop='name headline mainEntityOfPage' content='{{ site.title }}' />
+<meta itemprop='name headline mainEntityOfPage' content='{% if page.title %}{{ page.title }}{% else %}{{ site.title }} | An Art–Directed Publication{% endif %}' />
 <meta itemprop='author' itemtype='http://schema.org/Person' content='{{ site.author.name }}' />
-<meta itemprop='description' name='description' content='{{ site.description }}' />
+<meta itemprop='description' name='description' content='{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}' />
 <meta itemprop='url' content='{{ site.url | append: page.url }}' />
 <meta itemprop='genre' content='Website' />
 <meta itemprop='inLanguage' content='en-US' />
@@ -30,16 +30,16 @@
 <meta name='twitter:site:id' content='169319552' />
 <meta name='twitter:creator' content='@{{ site.author.twitter }}' />
 <meta name='twitter:creator:id' content='169319552' />
-<meta name='twitter:title' content='{{ site.title }}' />
-<meta name='twitter:description' content='{{ site.description }}' />
+<meta name='twitter:title' content='{% if page.title %}{{ page.title }}{% else %}{{ site.title }} | An Art–Directed Publication{% endif %}' />
+<meta name='twitter:description' content='{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}' />
 <meta name='twitter:image' content='{{ site.storage | append: page.cover }}' />
-<meta name='twitter:image:alt' content='The Grid Report Logo' />
+<meta name='twitter:image:alt' content='{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} Main Image' />
 <meta name='twitter:domain' content='{{ site.url }}' />
 
 <meta property='og:url' content='{{ site.url | append: page.url }}' />
 <meta property='og:type' content='article' />
-<meta property='og:title' content='{{ site.title }}' />
-<meta property='og:description' content='{{ site.description }}' />
+<meta property='og:title' content='{% if page.title %}{{ page.title }}{% else %}{{ site.title }} | An Art–Directed Publication{% endif %}' />
+<meta property='og:description' content='{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}' />
 <meta property='og:image' content='{{ site.storage | append: page.cover }}' />
 <meta property='article:author' content='{{ site.author.name }}' />
 <meta property='article:publisher' content='http://facebook.com/{{ site.author.twitter }}/' />

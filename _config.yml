@@ -4,7 +4,7 @@ baseurl:      ""
 keywords:     "Design, Frontend, UX, Art-Directed, Essays"
 url:          "https://thegrid.report"
 ga:           "UA-58152304-7"
-storage:      "https://storage.googleapis.com/ro9ues/thegrid.report/images/"
+storage:      "https://storage.googleapis.com/ro9ues/thegrid.report/"
 author:
   name: "Rogues"
   twitter: "ro9ues"
