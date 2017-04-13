@@ -1,0 +1,10 @@
+<div class='articles'>
+  <article>
+    {% for post in site.posts %}
+      <a href='{{ site.url | append: post.url }}'>
+        <time class='articles__date'>{{ post.date | date: "%b %d" }}</time>
+        <h3 class='articles__title'>{{ post.title | escape }}</h3>
+      </a>
+    {% endfor %}
+  </article>
+</div>

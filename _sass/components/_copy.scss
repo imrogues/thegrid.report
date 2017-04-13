@@ -1,0 +1,45 @@
+.copy {
+  font-family: 'basil-lite';
+  font-size: 46px;
+  font-weight: 400;
+  letter-spacing: -0.030em;
+  line-height: 50px;
+  max-width: 625px;
+  position: relative;
+  text-align: center;
+
+  &__first-name {
+    color: white(1);
+    font-size: 80px;
+  }
+
+  &__last-name {
+    color: white(0.1);
+    font-size: 100px;
+    margin-left: -25px;
+  }
+
+  @media screen and (min-width: 375px) {
+    .copy__last-name {
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (min-width: 414px) {
+    padding: 0 35px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 66px;
+    line-height: 79px;
+    margin-left: 62.5px;
+    text-align: left;
+
+    .copy__last-name {
+      font-size: 190px;
+      left: -25px;
+      position: absolute;
+      top: 100px;
+    }
+  }
+}

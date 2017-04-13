@@ -1,0 +1,14 @@
+title:        "The Grid Report"
+description:  "An Art-Directed Technical Blog."
+baseurl:      ""
+keywords:     "Design, Frontend, UX, Art-Directed, Essays"
+url:          "https://thegrid.report"
+ga:           "UA-58152304-7"
+storage:      "https://storage.googleapis.com/ro9ues/thegrid.report/"
+author:
+  name: "Rogues"
+  twitter: "ro9ues"
+
+# Build settings
+markdown: kramdown
+theme: minima

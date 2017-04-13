@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+@mixin font($family, $style: normal, $weight: 400) {
+  font-family: $family;
+  font-style: $style;
+  font-weight: $weight;
+
+  // sass-lint:disable no-url-domains, no-url-protocols, no-duplicate-properties, indentation
+  @if $family == 'basil-lite' {
+    src: url('https://storage.googleapis.com/ro9ues/fonts/king-basil-lite.otf');
+  } @else {
+    src: url('https://storage.googleapis.com/ro9ues/fonts/px-grotesk-regular.eot');
+    src: url('https://storage.googleapis.com/ro9ues/fonts/px-grotesk-regular.eot?#iefix') format('embedded-opentype'),
+         url('https://storage.googleapis.com/ro9ues/fonts/px-grotesk-regular.woff') format('woff'),
+         url('https://storage.googleapis.com/ro9ues/fonts/px-grotesk-regular.ttf'),
+         url('https://storage.googleapis.com/ro9ues/fonts/px-grotesk-regular.svg') format('svg');
+  }
+  // sass-lint:enable no-url-domains, no-url-protocols, no-duplicate-properties, indentation
+}

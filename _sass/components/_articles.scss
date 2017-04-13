@@ -1,0 +1,51 @@
+.articles {
+  list-style-type: none;
+  margin: 200px auto 0;
+  padding-left: 0;
+  text-align: center;
+
+  a {
+    color: palette(tacao);
+    display: inline-block;
+
+    &:hover {
+      color: white(1);
+    }
+  }
+
+  article {
+    margin-bottom: 25px;
+  }
+
+  &__date {
+    color: white(0.8);
+    font-family: sans-serif;
+    font-size: 12px;
+  }
+
+  &__title {
+    // sass-lint:disable no-vendor-prefixes
+    -webkit-transition: color 0.3s ease-in-out;
+    // sass-lint:enable no-vendor-prefixes
+    color: currentColor;
+    display: inline-block;
+    font-family: 'px-grotesk';
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -0.011em;
+    line-height: 1;
+    margin: 0;
+    transition: color 0.3s ease-in-out;
+
+    @media screen and (min-width: 414px) {
+      font-size: 60px;
+    }
+  }
+}
+
+.day {
+  background-color: white(0.2);
+  height: 25px;
+  margin: 1px;
+  width: 25px;
+}

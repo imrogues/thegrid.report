@@ -1,0 +1,38 @@
+{
+  "name": "thegrid.report",
+  "version": "1.0.0",
+  "description": "A publication to know how to ask questions.",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "npm t",
+    "lint": "sass-lint --config .scss-lint.yml --verbose --no-exit",
+    "pretest": "npm run -s lint",
+    "test": "mocha tests/**  --compilers js:babel-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imrogues/thegrid.report.git"
+  },
+  "keywords": [
+    "Design",
+    "Frontend",
+    "JavaScript",
+    "UX",
+    "Publication"
+  ],
+  "author": "Rogues, an engineer with VERY STRONG creative mind.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imrogues/thegrid.report/issues"
+  },
+  "homepage": "https://github.com/imrogues/thegrid.report#readme",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-preset-es2015": "^6.22.0",
+    "husky": "^0.13.1",
+    "mocha": "^3.2.0",
+    "node-sass": "^4.5.0",
+    "sass-lint": "^1.10.2",
+    "sass-true": "^2.1.4"
+  }
+}
