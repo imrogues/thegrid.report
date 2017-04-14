@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+@font-face {
+  // sass-lint:disable no-url-protocols, no-url-domains, no-duplicate-properties, indentation
+  font-family: 'cooper-hewitt';
+  font-style: normal;
+  font-weight: 600;
+  src: url('https://storage.googleapis.com/ro9ues/fonts/cooper-hewitt/cooperhewitt-bold.eot');
+  src: url('https://storage.googleapis.com/ro9ues/fonts/cooper-hewitt/cooperhewitt-bold.eot?#iefix') format('embedded-opentype'),
+       url('https://storage.googleapis.com/ro9ues/fonts/cooper-hewitt/cooperhewitt-bold.woff') format('woff'),
+       url('https://storage.googleapis.com/ro9ues/fonts/cooper-hewitt/cooperhewitt-bold.svg') format('svg');
+  // sass-lint:enable no-url-protocols, no-url-domains, no-duplicate-properties, indentation
+}
