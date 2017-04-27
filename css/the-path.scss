@@ -22,7 +22,8 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'cooper-hewitt';
 }
 
@@ -41,41 +42,42 @@ h1, h2 {
   }
 
   &__heading {
-    text-transform: uppercase;
     font-size: 20px;
-    text-align: center;
     margin: 80px 0;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   &__quote {
     font-size: 25px;
     font-style: italic;
     line-height: 1.2;
-    position: relative;
     margin: 55px;
+    position: relative;
 
     &::before {
+      color: lighten($color-venice-blue, 60%);
       content: '“';
       font-size: 150px;
-      position: absolute;
       left: -50px;
+      position: absolute;
       top: -40px;
       z-index: -1;
-      color: lighten($color-venice-blue, 60%);
     }
   }
 
   &__title {
-    // font-size: 250px;
+    // sass-lint:disable no-vendor-prefixes
+    -webkit-transform: translateY(-50%);
+    // sass-lint:enable no-vendor-prefixes
     font-size: 100px;
     line-height: 0.8;
-    text-transform: uppercase;
-    text-align: center;
     margin: 0;
     position: relative;
+    text-align: center;
+    text-transform: uppercase;
     top: 50%;
     transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
 
     @media screen and (min-width: 768px) {
       font-size: 160px;
@@ -92,8 +94,8 @@ p + p {
 }
 
 footer {
+  background-color: $color-venice-blue;
+  color: white(1);
   margin-top: 200px;
   text-align: center;
-  background-color: $color-venice-blue;
-  color: white;
 }
