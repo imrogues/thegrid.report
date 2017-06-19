@@ -36,6 +36,7 @@ h2 {
   font-size: 87.5%;
   margin: 0 auto;
   max-width: 420px;
+  padding: 0 15px;
 
   &__cover {
     height: 100vh;
@@ -94,8 +95,10 @@ p + p {
 }
 
 footer {
+  // sass-lint:disable no-color-keywords, no-color-literals
   background-color: $color-venice-blue;
-  color: white(1);
+  color: white;
   margin-top: 200px;
   text-align: center;
+  // sass-lint:enable no-color-keywords, no-color-literals
 }
